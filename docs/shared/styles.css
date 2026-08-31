@@ -432,7 +432,8 @@ nav.wrap {
 }
 
 .hero-stats div {
-  padding: 22px 0 8px;
+  padding: 22px 15px 8px;
+  /* padding: 15px; */
   border-right: 1px solid var(--line-dark);
 }
 
@@ -445,6 +446,9 @@ nav.wrap {
   font-weight: 700;
   font-size: 1.7rem;
   color: #fff;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .hero-stats .lbl {
