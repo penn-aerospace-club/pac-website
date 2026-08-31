@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>High-Powered Rocketry — Aerospace Club at Penn</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="shared/styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header>
+    <nav class="wrap">
+      <a href="index.html" class="brand">
+        <img src="https://aerospaceclub.seas.upenn.edu/wp-content/uploads/2025/07/cropped-cropped-FullLogo-2-1.png"
+          alt="Aerospace Club at Penn logo">
+        <span class="brand-text">Aerospace Club<span>at Penn</span></span>
+      </a>
+      <ul class="navlinks" id="navlinks">
+        <li><a href="index.html" class="top-link">Home</a></li>
+        <li>
+          <a href="#" class="top-link">Our Teams <span class="caret"></span></a>
+          <ul class="dropdown">
+            <li><a href="team-rocketry.html" class="active">High-Powered Rocketry</a></li>
+            <li><a href="team-balloon.html">High-Altitude Balloon</a></li>
+            <li><a href="team-jet.html">Jet Propulsion</a></li>
+            <li><a href="team-aircraft.html">Aircraft</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#sponsors" class="top-link">Sponsors</a></li>
+        <li><a href="index.html#contact" class="top-link">Contact</a></li>
+        <li><a href="mailto:pac@engineering.upenn.edu" class="nav-cta">Join PAC</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-grid"></div>
+
+      <!-- rocket climbs straight up the page -->
+      <svg class="scroll-icon vertical" data-anim="vertical" viewBox="0 0 64 140" xmlns="http://www.w3.org/2000/svg">
+        <path d="M32 2c10 14 15 34 15 56v34l-15 10-15-10V58C17 36 22 16 32 2z" fill="#EAEDF5" />
+        <path d="M32 2c10 14 15 34 15 56v34l-15 10V2z" fill="#C3CBDD" />
+        <circle cx="32" cy="46" r="9" fill="#5EC8E8" stroke="#011F5B" stroke-width="2" />
+        <path d="M17 70c-10 2-14 12-14 26l14-8z" fill="#990000" />
+        <path d="M47 70c10 2 14 12 14 26l-14-8z" fill="#990000" />
+        <path d="M25 102h14l-3 14a4 4 0 0 1-8 0z" fill="#8B95AE" />
+        <ellipse class="flame" cx="32" cy="122" rx="7" ry="16" fill="#FFB84D" opacity="0.95" />
+      </svg>
+
+      <div class="wrap hero-content">
+        <span class="eyebrow mono"><span class="dot"></span>SUBTEAM &middot; HIGH-POWERED ROCKETRY</span>
+        <h1>Design, build, <em>launch.</em></h1>
+        <p class="lede">A hands-on, cross-disciplinary environment for students of any experience level to design,
+          build, and launch competition-class rockets — from first solder to final countdown.</p>
+        <div class="hero-ctas">
+          <a href="mailto:pac@engineering.upenn.edu" class="btn btn-primary">Join the team &rarr;</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="num">12,489 ft</div>
+            <div class="lbl">2024 apogee</div>
+          </div>
+          <div>
+            <div class="num">2</div>
+            <div class="lbl">Competitions flown</div>
+          </div>
+          <div>
+            <div class="num">5</div>
+            <div class="lbl">Subteams</div>
+          </div>
+          <div>
+            <div class="num">20</div>
+            <div class="lbl">Members at 2024 cup</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap" style="max-width:760px;">
+        <div class="section-head">
+          <span class="eyebrow-line">The Team</span>
+          <h2>First two years, second competition.</h2>
+          <p>After competing at the 2024 Spaceport America Cup and the 2025 International Rocket Engineering Competition
+            (the Cup's successor event) in our first two years back, we're building a lasting foundation for advanced
+            rocketry at Penn. Our team is divided into subteams and values passion, dedication, and a positive attitude
+            over prior experience.</p>
+        </div>
+
+        <!-- TODO: only two subteams are documented from current site copy —
+             fill in the remaining subteams here once confirmed with current leads.
+             Each roster-pill is a placeholder — swap in real member names.
+             Add class="lead" to a pill to highlight a subteam lead (red outline). -->
+        <div class="subteams-list">
+          <div class="subteam-row">
+            <h4 class="mono" style="color:var(--penn-red);">AVIONICS</h4>
+            <div>
+              <p>Designs, builds, and integrates the rocket's flight computer, sensors, and communications systems —
+                collecting data and controlling onboard devices throughout the entire flight.</p>
+              <div class="roster-group">
+                <div class="roster-names">
+                  <span class="roster-pill lead">Add Name — Lead</span>
+                  <span class="roster-pill">Add Name</span>
+                  <span class="roster-pill">Add Name</span>
+                  <span class="roster-pill">Add Name</span>
+                  <span class="roster-pill">Add Name</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="subteam-row">
+            <h4 class="mono" style="color:var(--penn-red);">PAYLOAD</h4>
+            <div>
+              <p>Responsible for the design and construction of the team's independent deployable payloads. Last year
+                the
+                team built its first deployable aerial camera, now the foundation for more advanced iterations.</p>
+              <div class="roster-group">
+                <div class="roster-names">
+                  <span class="roster-pill lead">Add Name — Lead</span>
+                  <span class="roster-pill">Add Name</span>
+                  <span class="roster-pill">Add Name</span>
+                  <span class="roster-pill">Add Name</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="offer">
+      <div class="wrap">
+        <div class="section-head" style="color:#fff;"><span class="eyebrow-line"
+            style="color:var(--pac-blue);">Leadership</span>
+          <h2>2025–26 team leads</h2>
+        </div>
+        <!-- TODO: confirm current-year leads before publishing -->
+        <div class="leads-grid">
+          <div class="lead-card" style="background:rgba(255,255,255,0.04);border-color:var(--line-dark);">
+            <div class="role" style="color:var(--pac-blue);">Team Lead</div>
+            <h4 style="color:#fff;">Add name</h4>
+            <a href="mailto:pac@engineering.upenn.edu" style="color:var(--pac-blue);">Contact via
+              pac@engineering.upenn.edu</a>
+          </div>
+          <div class="lead-card" style="background:rgba(255,255,255,0.04);border-color:var(--line-dark);">
+            <div class="role" style="color:var(--pac-blue);">Co-Lead</div>
+            <h4 style="color:#fff;">Add name</h4>
+            <a href="mailto:pac@engineering.upenn.edu" style="color:var(--pac-blue);">Contact via
+              pac@engineering.upenn.edu</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="wrap">
+      <div class="foot-top">
+        <div class="foot-brand">
+          <a href="index.html" class="brand">
+            <img src="https://aerospaceclub.seas.upenn.edu/wp-content/uploads/2025/07/cropped-cropped-FullLogo-2-1.png"
+              alt="Aerospace Club at Penn logo" style="height:38px;">
+            <span class="brand-text">Aerospace Club<span>at Penn</span></span>
+          </a>
+        </div>
+        <div class="foot-links">
+          <div class="foot-col">
+            <h4>Teams</h4>
+            <a href="team-rocketry.html">High-Powered Rocketry</a>
+            <a href="team-balloon.html">High-Altitude Balloon</a>
+            <a href="team-jet.html">Jet Propulsion</a>
+            <a href="team-aircraft.html">Aircraft</a>
+          </div>
+          <div class="foot-col">
+            <h4>Connect</h4>
+            <a href="mailto:pac@engineering.upenn.edu">pac@engineering.upenn.edu</a>
+            <a href="https://www.instagram.com/pennaerospace/">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <div class="foot-bottom"><span>&copy; 2026 Aerospace Club at Penn</span><span>Mockup — design system v0.2</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="shared/scroll-animations.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>High-Altitude Balloon — Aerospace Club at Penn</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="shared/styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header>
+    <nav class="wrap">
+      <a href="index.html" class="brand">
+        <img src="https://aerospaceclub.seas.upenn.edu/wp-content/uploads/2025/07/cropped-cropped-FullLogo-2-1.png"
+          alt="Aerospace Club at Penn logo">
+        <span class="brand-text">Aerospace Club<span>at Penn</span></span>
+      </a>
+      <ul class="navlinks" id="navlinks">
+        <li><a href="index.html" class="top-link">Home</a></li>
+        <li>
+          <a href="#" class="top-link">Our Teams <span class="caret"></span></a>
+          <ul class="dropdown">
+            <li><a href="team-rocketry.html">High-Powered Rocketry</a></li>
+            <li><a href="team-balloon.html" class="active">High-Altitude Balloon</a></li>
+            <li><a href="team-jet.html">Jet Propulsion</a></li>
+            <li><a href="team-aircraft.html">Aircraft</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#sponsors" class="top-link">Sponsors</a></li>
+        <li><a href="index.html#contact" class="top-link">Contact</a></li>
+        <li><a href="mailto:pac@engineering.upenn.edu" class="nav-cta">Join PAC</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-grid"></div>
+
+      <!-- hot air balloon rises straight up the page -->
+      <svg class="scroll-icon vertical" data-anim="vertical" viewBox="0 0 90 150" xmlns="http://www.w3.org/2000/svg"
+        style="width:66px;">
+        <ellipse cx="45" cy="52" rx="38" ry="46" fill="#EAEDF5" />
+        <path d="M45 6C30 26 20 40 20 60c0 20 10 34 25 38 15-4 25-18 25-38 0-20-10-34-25-54z" fill="#5EC8E8"
+          opacity="0.55" />
+        <path d="M12 52c2 24 14 40 33 46 19-6 31-22 33-46" fill="none" stroke="#011F5B" stroke-width="1.5"
+          opacity="0.4" />
+        <path d="M45 6c-6 20-8 34-8 54s2 30 8 40c6-10 8-20 8-40S51 26 45 6z" fill="#990000" opacity="0.5" />
+        <line x1="24" y1="94" x2="34" y2="118" stroke="#4A5165" stroke-width="1.5" />
+        <line x1="66" y1="94" x2="56" y2="118" stroke="#4A5165" stroke-width="1.5" />
+        <line x1="45" y1="98" x2="45" y2="118" stroke="#4A5165" stroke-width="1.5" />
+        <rect x="34" y="118" width="22" height="16" rx="2" fill="#8B95AE" />
+      </svg>
+
+      <div class="wrap hero-content">
+        <span class="eyebrow mono"><span class="dot"></span>SUBTEAM &middot; HIGH-ALTITUDE BALLOON</span>
+        <h1>Near space, <em>real data.</em></h1>
+        <p class="lede">Custom-built payloads launched to the edge of the stratosphere — onboard sensors, solar power,
+          and machine learning, recovered and re-flown every semester.</p>
+        <div class="hero-ctas">
+          <a href="mailto:pac@engineering.upenn.edu" class="btn btn-primary">Join the team &rarr;</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="num">5</div>
+            <div class="lbl">Payloads, Nov 2024 flight</div>
+          </div>
+          <div>
+            <div class="num">2</div>
+            <div class="lbl">Onboard solar panels</div>
+          </div>
+          <div>
+            <div class="num">1</div>
+            <div class="lbl">Team-built ML model</div>
+          </div>
+          <div>
+            <div class="num">Recovered</div>
+            <div class="lbl">Every flight to date</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap" style="max-width:760px;">
+        <div class="section-head">
+          <span class="eyebrow-line">The Team</span>
+          <h2>Five new payloads, one launch.</h2>
+          <p>Our most recent flight from Warwick County Park in Pottstown, PA carried a custom-built payload, two solar
+            panels, a team-developed weather-prediction machine learning model, a sample drawer of plant seeds, and an
+            expanded suite of weather sensors — five new engineering projects flown together for the first time.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="offer">
+      <div class="wrap">
+        <div class="section-head" style="color:#fff;"><span class="eyebrow-line"
+            style="color:var(--pac-blue);">Leadership</span>
+          <h2>2025–26 team leads</h2>
+        </div>
+        <!-- TODO: confirm current-year leads before publishing -->
+        <div class="leads-grid">
+          <div class="lead-card" style="background:rgba(255,255,255,0.04);border-color:var(--line-dark);">
+            <div class="role" style="color:var(--pac-blue);">Team Director</div>
+            <h4 style="color:#fff;">Add name</h4>
+            <a href="mailto:pac@engineering.upenn.edu" style="color:var(--pac-blue);">Contact via
+              pac@engineering.upenn.edu</a>
+          </div>
+          <div class="lead-card" style="background:rgba(255,255,255,0.04);border-color:var(--line-dark);">
+            <div class="role" style="color:var(--pac-blue);">Co-Director</div>
+            <h4 style="color:#fff;">Add name</h4>
+            <a href="mailto:pac@engineering.upenn.edu" style="color:var(--pac-blue);">Contact via
+              pac@engineering.upenn.edu</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="wrap">
+      <div class="foot-top">
+        <div class="foot-brand">
+          <a href="index.html" class="brand">
+            <img src="https://aerospaceclub.seas.upenn.edu/wp-content/uploads/2025/07/cropped-cropped-FullLogo-2-1.png"
+              alt="Aerospace Club at Penn logo" style="height:38px;">
+            <span class="brand-text">Aerospace Club<span>at Penn</span></span>
+          </a>
+        </div>
+        <div class="foot-links">
+          <div class="foot-col">
+            <h4>Teams</h4>
+            <a href="team-rocketry.html">High-Powered Rocketry</a>
+            <a href="team-balloon.html">High-Altitude Balloon</a>
+            <a href="team-jet.html">Jet Propulsion</a>
+            <a href="team-aircraft.html">Aircraft</a>
+          </div>
+          <div class="foot-col">
+            <h4>Connect</h4>
+            <a href="mailto:pac@engineering.upenn.edu">pac@engineering.upenn.edu</a>
+            <a href="https://www.instagram.com/pennaerospace/">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <div class="foot-bottom"><span>&copy; 2026 Aerospace Club at Penn</span><span>Mockup — design system v0.2</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="shared/scroll-animations.js"></script>
+</body>
+
+</html>

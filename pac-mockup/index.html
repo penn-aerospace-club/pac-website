@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aerospace Club at Penn</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="shared/styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header>
+    <nav class="wrap">
+      <a href="index.html" class="brand">
+        <img src="https://aerospaceclub.seas.upenn.edu/wp-content/uploads/2025/07/cropped-cropped-FullLogo-2-1.png"
+          alt="Aerospace Club at Penn logo">
+        <span class="brand-text">Aerospace Club<span>at Penn</span></span>
+      </a>
+
+      <ul class="navlinks" id="navlinks">
+        <li><a href="index.html" class="top-link active">Home</a></li>
+        <li>
+          <a href="#teams" class="top-link">Our Teams <span class="caret"></span></a>
+          <ul class="dropdown">
+            <li><a href="team-rocketry.html">High-Powered Rocketry</a></li>
+            <li><a href="team-balloon.html">High-Altitude Balloon</a></li>
+            <li><a href="team-jet.html">Jet Propulsion</a></li>
+            <li><a href="team-aircraft.html">Aircraft</a></li>
+          </ul>
+        </li>
+        <li><a href="#sponsors" class="top-link">Sponsors</a></li>
+        <li><a href="#contact" class="top-link">Contact</a></li>
+        <li><a href="mailto:pac@engineering.upenn.edu" class="nav-cta">Join PAC</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <section class="hero" id="top">
+      <div class="hero-bg"
+        style="background-image:url('https://aerospaceclub.seas.upenn.edu/wp-content/uploads/2020/08/cropped-MilkyWaySpitzer-scaled-1.jpg');">
+      </div>
+      <div class="hero-grid"></div>
+
+      <svg class="scroll-icon vertical" data-anim="vertical" viewBox="0 0 64 140" xmlns="http://www.w3.org/2000/svg">
+        <path d="M32 2c10 14 15 34 15 56v34l-15 10-15-10V58C17 36 22 16 32 2z" fill="#EAEDF5" />
+        <path d="M32 2c10 14 15 34 15 56v34l-15 10V2z" fill="#C3CBDD" />
+        <circle cx="32" cy="46" r="9" fill="#5EC8E8" stroke="#011F5B" stroke-width="2" />
+        <path d="M17 70c-10 2-14 12-14 26l14-8z" fill="#990000" />
+        <path d="M47 70c10 2 14 12 14 26l-14-8z" fill="#990000" />
+        <path d="M25 102h14l-3 14a4 4 0 0 1-8 0z" fill="#8B95AE" />
+        <ellipse class="flame" cx="32" cy="122" rx="7" ry="16" fill="#FFB84D" opacity="0.95" />
+      </svg>
+
+      <div class="wrap hero-content">
+        <h1>Building the next generation of <em>aerospace</em> engineers.</h1>
+        <p class="lede">The University of Pennsylvania's student community of aerospace engineers, researchers, and
+          enthusiasts.</p>
+        <div class="hero-ctas">
+          <a href="mailto:pac@engineering.upenn.edu" class="btn btn-primary">Join the Club &rarr;</a>
+          <a href="#teams" class="btn btn-ghost">See Our Teams</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="num">150+</div>
+            <div class="lbl">Active members</div>
+          </div>
+          <div>
+            <div class="num">4</div>
+            <div class="lbl">Sub-teams</div>
+          </div>
+          <div>
+            <div class="num">12,489 ft</div>
+            <div class="lbl">2024 rocket apogee</div>
+          </div>
+          <div>
+            <div class="num">#4 / 150</div>
+            <div class="lbl">AIAA DBF ranking</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="log" id="teams">
+      <div class="wrap">
+        <div class="section-head" style="color:#fff;">
+          <span class="eyebrow-line" style="color:var(--pac-blue);">Mission Log</span>
+          <h2>Our teams fly high.</h2>
+          <p style="color:#B7BFD3;">We're divided into four sub-teams — High-Powered Rocketry, High-Altitude Balloon,
+            Jet Propulsion, and Aircraft — each running real hardware programs.</p>
+        </div>
+
+        <div class="log-entry">
+          <div class="log-meta">
+            <div class="tag">High-Powered Rocketry</div>
+            <div class="stat">12,489 ft</div>
+            <div class="date">SPACEPORT AMERICA CUP — JUN 2024</div>
+          </div>
+          <div class="log-body">
+            <h3>First competitive launch since the club's reinstatement</h3>
+            <p>12 of 20 team members traveled to compete. As a rookie team, they landed with no damage and outperformed
+              roughly 25 schools.</p>
+          </div>
+          <img src="https://aerospaceclub.seas.upenn.edu/wp-content/uploads/2025/03/CYL_3197-scaled.jpg"
+            alt="High-Powered Rocketry team">
+        </div>
+        <div class="log-entry">
+          <div class="log-meta">
+            <div class="tag">High-Altitude Balloon</div>
+            <div class="stat">5 payloads</div>
+            <div class="date">POTTSTOWN, PA — NOV 2024</div>
+          </div>
+          <div class="log-body">
+            <h3>First flight of five new engineering projects</h3>
+            <p>A custom-built payload, two solar panels, a team-developed weather-prediction ML model, and an expanded
+              suite of weather sensors — all launched from Warwick County Park.</p>
+          </div>
+          <img src="https://aerospaceclub.seas.upenn.edu/wp-content/uploads/2025/03/CYL_3246-scaled.jpg"
+            alt="High-Altitude Balloon team">
+        </div>
+        <div class="log-entry">
+          <div class="log-meta">
+            <div class="tag">Jet Propulsion</div>
+            <div class="stat">3.5 T/W</div>
+            <div class="date">COMPLETED — APR 2025</div>
+          </div>
+          <div class="log-body">
+            <h3>Fully custom axial micro-turbojet engine</h3>
+            <p>The first of its kind entirely developed by undergraduates — every major component designed in house,
+              most parts manufactured internally.</p>
+          </div>
+          <img
+            src="https://aerospaceclub.seas.upenn.edu/wp-content/uploads/2025/08/Screenshot-2025-08-13-at-14.25.17.png"
+            alt="Jet Propulsion micro-turbojet">
+        </div>
+        <div class="log-entry">
+          <div class="log-meta">
+            <div class="tag">Aircraft</div>
+            <div class="stat">Rank #4</div>
+            <div class="date">AIAA DESIGN BUILD FLY — PRELIM</div>
+          </div>
+          <div class="log-body">
+            <h3>Fourth place worldwide, first year competing</h3>
+            <p>Our newest team designed and built multiple R/C aircraft, ranking 4th of over 150 teams on their
+              preliminary report.</p>
+          </div>
+          <img src="https://aerospaceclub.seas.upenn.edu/wp-content/uploads/2025/08/IMG_4544-scaled.jpg"
+            alt="Aircraft team">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow-line">Get Involved</span>
+          <h2>Four teams, one club.</h2>
+          <p>As the primary aerospace-focused group on campus, PAC brings together the best aerospace talent Penn has to
+            offer.</p>
+        </div>
+        <div class="teams-grid">
+          <a class="team-card" href="team-rocketry.html">
+            <div><span class="idx">01</span>
+              <h3>High-Powered Rocketry</h3>
+              <p>Design, build, and launch competition-class rockets — culminating each year at the Spaceport America
+                Cup.</p>
+            </div><span class="go">View team &rarr;</span>
+          </a>
+          <a class="team-card" href="team-balloon.html">
+            <div><span class="idx">02</span>
+              <h3>High-Altitude Balloon</h3>
+              <p>Near-space payloads: custom sensor suites, solar power, and onboard ML — recovered and re-flown.</p>
+            </div><span class="go">View team &rarr;</span>
+          </a>
+          <a class="team-card" href="team-jet.html">
+            <div><span class="idx">03</span>
+              <h3>Jet Propulsion</h3>
+              <p>In-house designed and machined micro-turbojet engines, built from the ground up by students.</p>
+            </div><span class="go">View team &rarr;</span>
+          </a>
+          <a class="team-card" href="team-aircraft.html">
+            <div><span class="idx">04</span>
+              <h3>Aircraft</h3>
+              <p>R/C aircraft design and fabrication, competing in the AIAA Design Build Fly competition.</p>
+            </div><span class="go">View team &rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="offer">
+      <div class="wrap">
+        <div class="section-head" style="color:#fff;"><span class="eyebrow-line" style="color:var(--pac-blue);">Why
+            Join</span>
+          <h2>What we offer</h2>
+        </div>
+        <div class="offer-grid">
+          <div class="offer-card">
+            <div class="n mono">EXPERIENCE</div>
+            <h3>Real hardware, real deadlines</h3>
+            <p>Real-world engineering skills and project management experience — not simulations.</p>
+          </div>
+          <div class="offer-card">
+            <div class="n mono">COMMUNITY</div>
+            <h3>150+ member network</h3>
+            <p>Full access to our alumni network, industry connections, and professional development events.</p>
+          </div>
+          <div class="offer-card">
+            <div class="n mono">OPPORTUNITIES</div>
+            <h3>Sponsors &amp; mentorship</h3>
+            <p>Corporate sponsorship relationships and alumni mentorship opportunities across the aerospace industry.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sponsors">
+      <div class="wrap">
+        <div class="section-head"><span class="eyebrow-line">Our Sponsors</span>
+          <h2>Interested in partnering with us?</h2>
+          <p>Reach out to pac@engineering.upenn.edu for tiers, benefits, and past partners.</p>
+        </div>
+        <div class="sponsors-row">
+          <div class="sponsor-slot">SPONSOR LOGO</div>
+          <div class="sponsor-slot">SPONSOR LOGO</div>
+          <div class="sponsor-slot">SPONSOR LOGO</div>
+          <div class="sponsor-slot">SPONSOR LOGO</div>
+          <div class="sponsor-slot">SPONSOR LOGO</div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding-top:0;">
+      <div class="wrap">
+        <div class="section-head"><span class="eyebrow-line">Alumni &amp; Members</span>
+          <h2>Passionate alumni and students</h2>
+        </div>
+      </div>
+      <div class="quotes">
+        <div class="quote">
+          <p class="q">"PAC has far-and-away been my best opportunity to garner real-world engineering experience at
+            Penn."</p>
+          <div class="who">Jacob Platin — Former Director</div>
+        </div>
+        <div class="quote">
+          <p class="q">"As a lifelong aviation enthusiast, PAC has given me an incredible opportunity to work with and
+            lead alongside some of the most inspiring students, faculty, and industry leaders I have ever met."</p>
+          <div class="who">Benjamin Chan — Former Director</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contact">
+    <div class="wrap">
+      <div class="foot-top">
+        <div class="foot-brand">
+          <a href="index.html" class="brand">
+            <img src="https://aerospaceclub.seas.upenn.edu/wp-content/uploads/2025/07/cropped-cropped-FullLogo-2-1.png"
+              alt="Aerospace Club at Penn logo" style="height:38px;">
+            <span class="brand-text">Aerospace Club<span>at Penn</span></span>
+          </a>
+          <p style="max-width:32ch;font-size:.86rem;margin-top:18px;">University of Pennsylvania School of Engineering
+            and Applied Science.</p>
+        </div>
+        <div class="foot-links">
+          <div class="foot-col">
+            <h4>Teams</h4>
+            <a href="team-rocketry.html">High-Powered Rocketry</a>
+            <a href="team-balloon.html">High-Altitude Balloon</a>
+            <a href="team-jet.html">Jet Propulsion</a>
+            <a href="team-aircraft.html">Aircraft</a>
+          </div>
+          <div class="foot-col">
+            <h4>Connect</h4>
+            <a href="mailto:pac@engineering.upenn.edu">pac@engineering.upenn.edu</a>
+            <a href="https://www.instagram.com/pennaerospace/">Instagram</a>
+            <!-- <a href="https://www.facebook.com/pennaero/">Facebook</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="foot-bottom"><span>&copy; 2026 Aerospace Club at Penn</span><span>Mockup — design system v0.2</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="shared/scroll-animations.js"></script>
+</body>
+
+</html>

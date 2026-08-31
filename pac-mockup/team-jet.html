@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jet Propulsion — Aerospace Club at Penn</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="shared/styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header>
+    <nav class="wrap">
+      <a href="index.html" class="brand">
+        <img src="https://aerospaceclub.seas.upenn.edu/wp-content/uploads/2025/07/cropped-cropped-FullLogo-2-1.png"
+          alt="Aerospace Club at Penn logo">
+        <span class="brand-text">Aerospace Club<span>at Penn</span></span>
+      </a>
+      <ul class="navlinks" id="navlinks">
+        <li><a href="index.html" class="top-link">Home</a></li>
+        <li>
+          <a href="#" class="top-link">Our Teams <span class="caret"></span></a>
+          <ul class="dropdown">
+            <li><a href="team-rocketry.html">High-Powered Rocketry</a></li>
+            <li><a href="team-balloon.html">High-Altitude Balloon</a></li>
+            <li><a href="team-jet.html" class="active">Jet Propulsion</a></li>
+            <li><a href="team-aircraft.html">Aircraft</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#sponsors" class="top-link">Sponsors</a></li>
+        <li><a href="index.html#contact" class="top-link">Contact</a></li>
+        <li><a href="mailto:pac@engineering.upenn.edu" class="nav-cta">Join PAC</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-grid"></div>
+
+      <!-- turbine spins continuously AND climbs the page -->
+      <svg class="scroll-icon vertical" data-anim="vertical-spin" viewBox="0 0 100 100"
+        xmlns="http://www.w3.org/2000/svg" style="width:60px;">
+        <circle cx="50" cy="50" r="46" fill="none" stroke="#5EC8E8" stroke-width="3" />
+        <circle cx="50" cy="50" r="38" fill="#0A1630" />
+        <g class="spin-group">
+          <g fill="#EAEDF5">
+            <path d="M50 14 L56 44 L44 44 Z" />
+            <path d="M50 14 L56 44 L44 44 Z" transform="rotate(45 50 50)" />
+            <path d="M50 14 L56 44 L44 44 Z" transform="rotate(90 50 50)" />
+            <path d="M50 14 L56 44 L44 44 Z" transform="rotate(135 50 50)" />
+            <path d="M50 14 L56 44 L44 44 Z" transform="rotate(180 50 50)" />
+            <path d="M50 14 L56 44 L44 44 Z" transform="rotate(225 50 50)" />
+            <path d="M50 14 L56 44 L44 44 Z" transform="rotate(270 50 50)" />
+            <path d="M50 14 L56 44 L44 44 Z" transform="rotate(315 50 50)" />
+          </g>
+          <circle cx="50" cy="50" r="9" fill="#990000" />
+        </g>
+      </svg>
+
+      <div class="wrap hero-content">
+        <span class="eyebrow mono"><span class="dot"></span>SUBTEAM &middot; JET PROPULSION</span>
+        <h1>Built entirely <em>by students.</em></h1>
+        <p class="lede">Penn Jet Propulsion (PJP) explores, studies, and builds propulsion devices from the ground up —
+          CAD, CNC machining, CFD software, and final assembly, all done in-house by undergraduates.</p>
+        <div class="hero-ctas">
+          <a href="mailto:pac@engineering.upenn.edu" class="btn btn-primary">Join the team &rarr;</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="num">3.5</div>
+            <div class="lbl">Thrust-to-weight ratio</div>
+          </div>
+          <div>
+            <div class="num">25+</div>
+            <div class="lbl">Current members</div>
+          </div>
+          <div>
+            <div class="num">100%</div>
+            <div class="lbl">Undergrad-designed</div>
+          </div>
+          <div>
+            <div class="num">Apr 2025</div>
+            <div class="lbl">Engine completed</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap" style="max-width:760px;">
+        <div class="section-head">
+          <span class="eyebrow-line">The Team</span>
+          <h2>A fully custom axial micro-turbojet.</h2>
+          <p>In April 2025, Penn Jet Propulsion successfully completed a fully custom-designed axial micro-turbojet
+            engine, achieving a theoretical thrust-to-weight ratio of 3.5. This engine is the first of its kind entirely
+            developed by undergraduate students — every major component was designed in house, most parts were
+            manufactured internally, and final assembly was conducted entirely by the student team. Through PJP's
+            collaborative team structure, members get hands-on experience across the full engineering design process.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="offer">
+      <div class="wrap">
+        <div class="section-head" style="color:#fff;"><span class="eyebrow-line"
+            style="color:var(--pac-blue);">Leadership</span>
+          <h2>2025–26 team leads</h2>
+        </div>
+        <!-- TODO: confirm current-year leads before publishing -->
+        <div class="leads-grid">
+          <div class="lead-card" style="background:rgba(255,255,255,0.04);border-color:var(--line-dark);">
+            <div class="role" style="color:var(--pac-blue);">Team Lead</div>
+            <h4 style="color:#fff;">Add name</h4>
+            <a href="mailto:pac@engineering.upenn.edu" style="color:var(--pac-blue);">Contact via
+              pac@engineering.upenn.edu</a>
+          </div>
+          <div class="lead-card" style="background:rgba(255,255,255,0.04);border-color:var(--line-dark);">
+            <div class="role" style="color:var(--pac-blue);">Engine Lead</div>
+            <h4 style="color:#fff;">Add name</h4>
+            <a href="mailto:pac@engineering.upenn.edu" style="color:var(--pac-blue);">Contact via
+              pac@engineering.upenn.edu</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="wrap">
+      <div class="foot-top">
+        <div class="foot-brand">
+          <a href="index.html" class="brand">
+            <img src="https://aerospaceclub.seas.upenn.edu/wp-content/uploads/2025/07/cropped-cropped-FullLogo-2-1.png"
+              alt="Aerospace Club at Penn logo" style="height:38px;">
+            <span class="brand-text">Aerospace Club<span>at Penn</span></span>
+          </a>
+        </div>
+        <div class="foot-links">
+          <div class="foot-col">
+            <h4>Teams</h4>
+            <a href="team-rocketry.html">High-Powered Rocketry</a>
+            <a href="team-balloon.html">High-Altitude Balloon</a>
+            <a href="team-jet.html">Jet Propulsion</a>
+            <a href="team-aircraft.html">Aircraft</a>
+          </div>
+          <div class="foot-col">
+            <h4>Connect</h4>
+            <a href="mailto:pac@engineering.upenn.edu">pac@engineering.upenn.edu</a>
+            <a href="https://www.instagram.com/pennaerospace/">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <div class="foot-bottom"><span>&copy; 2026 Aerospace Club at Penn</span><span>Mockup — design system v0.2</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="shared/scroll-animations.js"></script>
+</body>
+
+</html>
